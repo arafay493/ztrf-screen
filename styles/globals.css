@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lato", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  user-select: none;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: silver;
+}
+
+@media only screen and (max-height: 1103px) {
+  .cardPin {
+    height: 400px;
+  }
+}
+
+/* @media only screen and (min-width: 786px) {
+  .cardPin {
+    height: 400px;
+  }
+} */
+
+
+@media only screen and ((max-height: 786px) and (max-width: 800px)) {
+  .cardPin2 {
+    height: 350px;
+    width: 200px;
+    /* margin-left: 50px; */
+  }
+  .cardPin2 .add-file {
+    width: 70px;
+    height: 50px;
+  }
+  .cardPin2 .select-folder {
+    margin-left: 0;
+  }
+  .cardPin2 .inputs-fields {
+    font-size: 10px;
+    bottom: 70px;
+    margin: 0 15px
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .cardPin2 {
+    height: 380px;
+    width: 230px;
+    /* margin-left: 30px; */
+  }
+  .cardPin2 .add-file {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main-heading{
+    top: 60%;
+  }
+
+  /* .cardPin2 .upto-text {
+    font-size: 25px;
+    right: -42px;
+    top: 32%;
+  } */
+
+  .cardPin2 .select-folder {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  .cardPin2 .inputs-fields {
+    font-size: 10px;
+    bottom: 50px
+  }
+
+  header .logo{
+    width: 118px;
+  }
+}
+
+
+/* @media (min-width: 1280px){
+  .cardPin2 .upto-text {
+    right: -42px;
+  }
+} */
+
+/* @media screen and (max-width: 320px) {
+  .cardPin .click_upload{
+    width: 200px;
+    height: 236px;
+    left: 5rem;
+  }
+  .cardPin{
+    width: 120px;
+    height: 236px;
+  }
+} */
+
+/* @media only screen and (max-height: 600px) {
+  .cardPin2{
+    height: 350px;
+    width: 230px;
+    margin-left: 30px;
+  }
+  .cardPin2 .add-file{
+    width: 40px;
+    height: 40px;
+  }
+  .cardPin2 .select-folder{
+    font-size: 10px;
+    margin-left: 0;
+  }
+} */
+
+@media only screen and (max-height: 480px) {
+  .cardPin2 {
+    height: 280px;
+    width: 200px;
+    /* margin-left: 10px; */
+  }
+  .cardPin2 .add-file {
+    width: 40px;
+    height: 40px;
+  }
+  .cardPin2 .select-folder {
+    font-size: 10px;
+    margin-left: 0;
+  }
+  .main-heading{
+    top: 60%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* .main-heading{
+    top: 58%;
+  } */
+  /* .main-heading .title-description {
+    width: 130px;
+  } */
+}
